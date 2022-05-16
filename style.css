@@ -79,15 +79,7 @@ padding-right: 25px;
     cursor: pointer;
 }
 
-.filtres li:nth-child(1)::before{
-    content: "fa-solid fa-money-bill-wave" ;
-}
-
-.filtres ul :hover{
-    background-color: var(--grey);
-}
-
-.filtres .fa-solid{
+.filtres li::before{
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
@@ -97,6 +89,34 @@ padding-right: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.filtres li:nth-child(1)::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f53b";
+}
+
+.filtres li:nth-child(2)::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\e59d";
+}
+
+.filtres li:nth-child(3)::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f004";
+}
+
+.filtres li:nth-child(4)::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f6d3"; 
+}
+
+.filtres ul :hover{
+    background-color: var(--grey);
 }
 
 .filtresListes{
@@ -162,11 +182,16 @@ padding-right: 25px;
 
 #headerTop nav a{
     padding: 20px;
+    display: block;
 }
 
-#headerTop nav a:hover{
+#headerTop nav li:hover{
     border-top: 2px solid #0065FC;
     color: #0065FC;
+}
+
+#headerTop nav li{
+    border-top: 2px solid transparent;
 }
 
 
@@ -191,7 +216,6 @@ padding-right: 25px;
     padding: 8px 40px;
     font-size: 15px;
     border: 1px solid #fef2f2;
-    color: rgba(193, 193, 193, 0.833);
 }
 
 #formSearch input[type=submit]{
@@ -203,6 +227,11 @@ padding-right: 25px;
     border: none;
     cursor: pointer;
 }
+
+#formSearch button{
+    display: none;
+}
+
 
 /* Section 1 */
 /* Hébergements */
@@ -256,11 +285,11 @@ padding-right: 25px;
     padding-left: 10px;
 }
 
-#hebergementsCardsDescription{
+.hebergementsCardsDescription{
     padding: 10px 0 10px 15px;
 }
 
-#hebergementsCardsDescription p{
+.hebergementsCardsDescription p{
     margin: 2px 0 5px 0;
 }
 
@@ -314,24 +343,24 @@ padding-right: 25px;
 
 #populairesCards img{
     border-radius: 5px 0 0 5px;
-    height: 100%;
+    height: 120px;
     width: 120px;
     object-fit: cover;
     object-position: bottom;
     display: flex;
 }   
 
-#populairesCardsDescription{
+.populairesCardsDescription{
     flex-direction: column;
     padding : 20px 0 0 20px;
     flex: 1;
 }
 
-#populairesCardsDescription p{
+.populairesCardsDescription p{
     padding-top: 10px;
 }
 
-#populairesCardsDescription div{
+.populairesCardsDescription div{
     padding-top: 20px;
 }
 
@@ -474,10 +503,15 @@ footer nav a:hover{
         align-items: flex-start;
     }
 
-    #headerTop nav a:hover{
+    #headerTop nav li:hover{
         border-bottom: 2px solid #0065FC;
         border-top: none;
         color: #0065FC;
+    }
+
+    #headerTop nav li{
+        border-bottom: 2px solid transparent;
+        border-top: none;
     }
 
     #headerTop div:nth-child(1){
@@ -497,12 +531,29 @@ footer nav a:hover{
 
     #logo{
         width: fit-content;
+        display: block;
+        margin: auto;
     }
 
 /* Formulaire */
 
+    #formSearch button{
+        display: inherit;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 0 10px 10px 0;
+        border: none;
+        cursor: pointer;
+        overflow: auto;
+    }
 
-        
+    #formSearch button i{
+        background-color: inherit;
+    }
+    
+    #formSearchButton{
+        display: none;
+    }
 
 /* Hébergements */
 
@@ -605,6 +656,10 @@ footer nav a:hover{
 
     footer{
         flex-direction: column;
+    }
+
+    footer nav{
+        text-align: center;
     }
 }
 

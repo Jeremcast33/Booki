@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +32,8 @@
                 <form id="formSearch" name="formSearch" action="..." method="post">
                     <i class="fa-solid fa-location-dot"></i>
                     <label for="searchCity">Recherche :</label> <input name="searchCity" id="searchCity" type="search" placeholder="Marseille, France" />
-                    <input type="submit" value="Rechercher"> 
+                    <input id="formSearchButton" type="submit" value="Rechercher">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>  
 
             <!-- Filtres -->
@@ -40,9 +41,9 @@
                     <h2>Filtres</h2>
                     <ul>
                         <li> <span class="filtresListes">Économiques</span> </li>
-                        <li> <i class="fa-solid fa-child-reaching"></i> <span class="filtresListes">Familial</span> </li>
-                        <li> <i class="fa-solid fa-heart"></i> <span class="filtresListes">Romantique</span> </li>
-                        <li> <i class="fa-solid fa-dog"></i> <span class="filtresListes">Animaux autorisés</span> </li>
+                        <li> <span class="filtresListes">Familial</span> </li>
+                        <li> <span class="filtresListes">Romantique</span> </li>
+                        <li> <span class="filtresListes">Animaux autorisés</span> </li>
                     </ul>
                 </div>
 
@@ -62,7 +63,7 @@
                                 <figcaption><h3>Auberge La Cannebière</h3></figcaption>
                                 </figure>    
                             
-                            <div id="hebergementsCardsDescription">
+                            <div class="hebergementsCardsDescription">
                                 <p>Nuit à partir de <strong>25€</strong></p>
                                     <div>
                                         <i class="fa-solid fa-star blue"></i>
@@ -81,7 +82,7 @@
                                     <figcaption><h3>Hôtel du Port</h3></figcaption>
                                 </figure>
                                 
-                                <div id="hebergementsCardsDescription">
+                                <div class="hebergementsCardsDescription">
                                     <p>Nuit à partir de <strong>52€</strong></p>
                                         <div>
                                             <i class="fa-solid fa-star blue"></i>
@@ -100,7 +101,7 @@
                                     <figcaption><h3>Hôtel Les Mouettes</h3></figcaption>
                                 </figure>
                                 
-                                <div id="hebergementsCardsDescription">
+                                <div class="hebergementsCardsDescription">
                                     <p>Nuit à partir de <strong>76€</strong></p>
                                         <div>
                                             <i class="fa-solid fa-star blue"></i>
@@ -119,7 +120,7 @@
                                     <figcaption><h3>Hôtel de la mer</h3></figcaption>
                                 </figure>
                                 
-                                <div id="hebergementsCardsDescription">
+                                <div class="hebergementsCardsDescription">
                                     <p>Nuit à partir de <strong>46€</strong></p>
                                         <div>
                                             <i class="fa-solid fa-star blue"></i>
@@ -138,7 +139,7 @@
                                     <figcaption><h3>Auberge Le Panier</h3></figcaption>
                                 </figure>
                                 
-                                <div id="hebergementsCardsDescription">
+                                <div class="hebergementsCardsDescription">
                                     <p>Nuit à partir de <strong>23€</strong></p>
                                         <div>
                                             <i class="fa-solid fa-star blue"></i>
@@ -157,7 +158,7 @@
                                     <figcaption><h3>Hôtel Chez Amina</h3></figcaption>
                                 </figure>
                         
-                                <div id="hebergementsCardsDescription">
+                                <div class="hebergementsCardsDescription">
                                     <p>Nuit à partir de <strong>96€</strong></p>
                                         <div>
                                             <i class="fa-solid fa-star blue"></i>
@@ -183,7 +184,7 @@
                                     <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre avec vue">
                                 </figure>
             
-                                <div id="populairesCardsDescription">
+                                <div class="populairesCardsDescription">
                                     <h3>Hôtel Le Soleil Du Matin</h3>
                                     <p>Nuit à partir de <strong>128€</strong></p>
                                     <div>
@@ -202,7 +203,7 @@
                                     <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre avec vue">
                                 </figure>
 
-                                <div id="populairesCardsDescription">
+                                <div class="populairesCardsDescription">
                                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                     <p>Nuit à partir de <strong>71€</strong></p>
                                     <div>
@@ -221,7 +222,7 @@
                                     <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre avec vue">
                                 </figure>
                                 
-                                <div id="populairesCardsDescription">
+                                <div class="populairesCardsDescription">
                                     <h3>Hôtel Tout Bleu et Blanc</h3>
                                     <p>Nuit à partir de <strong>68€</strong></p>
                                     <div>
