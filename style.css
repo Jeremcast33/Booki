@@ -248,6 +248,7 @@ a {
 #hebergementsPopulaires {
     padding: 0 30px;
     display: flex;
+    flex-flow: wrap;
 }
 
 #hebergements {
@@ -267,16 +268,17 @@ a {
 #hebergementsCards {
     flex-flow: row wrap;
     margin: 0 20px 30px 20px;
-    column-count: 3;
+    display: flex;
+    justify-content: space-around;
 }
 
 #hebergementsCards article {
     border-radius: 20px;
-    flex: 0 0 240px;
     background-color: white;
     box-shadow: 1px 1px 4px grey;
     font-size: small;
     margin-bottom: 30px;
+    width: 30%;
 }
 
 #hebergementsCards img {
@@ -310,7 +312,7 @@ a {
 #populaires {
     background-color: #F2F2F2;
     margin-left: 15px;
-    flex-basis: 33%;
+    width: 33%;
     border-radius: 10px;
     padding: 20px;
 }
@@ -334,6 +336,7 @@ a {
 
 #populairesCards h3{
     padding-right: 29px;
+    max-width: 250px;
 }
 
 #populairesCards article {
@@ -345,6 +348,7 @@ a {
     margin-bottom: 20px;
     font-size: small;
     padding: 5px;
+    height: 168px;
 }
 
 #populairesCards a {
@@ -354,17 +358,17 @@ a {
 
 #populairesCards img {
     border-radius: 18px 0 0 18px;
-    height: 130px;
-    width: 120px;
+    height: 100%;
+    width: 130px;
     object-fit: cover;
     object-position: bottom;
     display: flex;
+    max-height: 130px;
 }
 
 .populairesCardsDescription {
     flex-direction: column;
     padding: 10px 0 0 20px;
-    flex: 1;
 }
 
 .populairesCardsDescription p {
@@ -610,12 +614,8 @@ footer nav a:hover {
         padding-left: 20px;
     }
 
-    #hebergementsCards {
-        display: inline;
-    }
-
     #hebergementsCards article {
-        margin: 0 20px 30px 20px;
+        flex: 0 0 100%;
     }
 
 
@@ -698,10 +698,6 @@ footer nav a:hover {
     footer {
         flex-direction: column;
     }
-
-    footer nav {
-        text-align: center;
-    }
 }
 
 
@@ -717,6 +713,16 @@ footer nav a:hover {
 
     #hebergements {
         margin: 0;
+        padding: 10px 30px;
+    }
+
+    #hebergementsCards {
+        width: 100%;
+        margin: 0;
+    }
+
+    #hebergementsCards article{
+        width: 45%;
     }
 
 
@@ -728,6 +734,7 @@ footer nav a:hover {
         margin: 0 0 30px 0;
         padding-right: 10px;
         padding-left: 10px;
+        width: 100%;
     }
 
     #populairesCards {
@@ -735,6 +742,21 @@ footer nav a:hover {
     }
 
     .populairesCardsDescription div {
-        padding-top: 40px;
+        padding-top: 60px;
+    }
+
+    #populairesCards img{
+        max-height: none;
+    }
+    
+}
+
+@media screen and (max-width: 1246px) {
+    #populairesCards img{
+        max-height: inherit;
+    }
+
+    #populairesCards article{
+        
     }
 }
