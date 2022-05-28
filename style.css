@@ -626,10 +626,6 @@ footer nav a:hover {
         padding-right: inherit;
     }
 
-    .populairesCardsDescription div {
-        
-    }
-
     /* Activités */
 
     #activitesCards {
@@ -744,10 +740,6 @@ footer nav a:hover {
 
     #populairesCards article{
         flex: 0 0 100%;
-    }
-
-    .populairesCardsDescription div {
-    
     }
 
     #populairesCards img{
