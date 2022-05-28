@@ -38,7 +38,6 @@ html {
 }
 
 img {
-    max-width: 100%;
     height: auto;
 }
 
@@ -343,7 +342,7 @@ a {
     display: flex;
     border-radius: 20px;
     background-color: white;
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
     box-shadow: 1px 1px 4px grey;
     margin-bottom: 20px;
     font-size: small;
@@ -363,12 +362,14 @@ a {
     object-fit: cover;
     object-position: bottom;
     display: flex;
-    max-height: 130px;
+    /* max-height: 130px; */
 }
 
 .populairesCardsDescription {
     flex-direction: column;
     padding: 10px 0 0 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .populairesCardsDescription p {
@@ -376,7 +377,7 @@ a {
 }
 
 .populairesCardsDescription div {
-    padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 
@@ -626,7 +627,7 @@ footer nav a:hover {
     }
 
     .populairesCardsDescription div {
-        padding-top: 40px;
+        
     }
 
     /* Activités */
@@ -741,12 +742,17 @@ footer nav a:hover {
         flex-direction: row;
     }
 
+    #populairesCards article{
+        flex: 0 0 100%;
+    }
+
     .populairesCardsDescription div {
-        padding-top: 60px;
+    
     }
 
     #populairesCards img{
-        max-height: none;
+        /* max-height: none; */
+        max-height: 130px;
     }
     
 }
