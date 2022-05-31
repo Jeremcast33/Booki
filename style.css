@@ -255,20 +255,20 @@ a {
     margin-right: 15px;
     flex: 2;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 /* Hébergements cartes */
 
 #hebergements h2 {
-    padding: 15px 0 20px 20px;
+    padding: 15px 0 20px 0;
 }
 
 #hebergementsCards {
     flex-flow: row wrap;
-    margin: 0 20px 30px 20px;
+    margin-bottom: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #hebergementsCards article {
@@ -283,7 +283,7 @@ a {
 #hebergementsCards img {
     border-radius: 20px 20px 0 0;
     padding: 5px;
-    height: 120px;
+    height: 130px;
     width: 100%;
     object-fit: cover;
     object-position: center;
@@ -303,7 +303,6 @@ a {
 
 #hebergementsCards+a {
     font-weight: bold;
-    padding-left: 20px;
 }
 
 /* Populaires */
@@ -313,13 +312,13 @@ a {
     margin-left: 15px;
     width: 33%;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
 }
 
 #populaires h2 {
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px 20px 20px;
+    padding: 15px 15px 20px 15px;
 }
 
 /* Populaires cartes */
@@ -330,7 +329,6 @@ a {
     justify-content: space-between;
     flex: 0 0 100%;
     padding: 0 10px;
-    margin: 0 10px;
 }
 
 #populairesCards h3{
@@ -347,7 +345,7 @@ a {
     margin-bottom: 20px;
     font-size: small;
     padding: 5px;
-    height: 168px;
+    height: 150px;
 }
 
 #populairesCards a {
@@ -360,7 +358,7 @@ a {
     height: 100%;
     width: 130px;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
     display: flex;
     /* max-height: 130px; */
 }
@@ -608,11 +606,11 @@ footer nav a:hover {
     }
 
     #hebergements h2 {
-        padding-left: 20px;
+        padding-left: 0;
     }
 
     #hebergementsCards+a {
-        padding-left: 20px;
+        padding-left: 0;
     }
 
     #hebergementsCards article {
@@ -622,8 +620,16 @@ footer nav a:hover {
 
     /* Populaires */
 
-    #populairesCards h3 {
+    #populairesCards{
+        padding: 0;
+    }
+
+    #populairesCards h3{
         padding-right: inherit;
+    }
+
+    #populaires h2{
+        padding: 15px 0 20px 0;
     }
 
     /* Activités */
@@ -729,8 +735,6 @@ footer nav a:hover {
         order: -1;
         /*Pour placer le bloc populaires en premier on lui met une valeur négative*/
         margin: 0 0 30px 0;
-        padding-right: 10px;
-        padding-left: 10px;
         width: 100%;
     }
 
