@@ -29,10 +29,6 @@ h2 {
     font-size: 22px;
 }
 
-h3 {
-    font-weight: bold;
-}
-
 html {
     font-size: 17px;
 }
@@ -255,7 +251,7 @@ a {
     margin-right: 15px;
     flex: 2;
     border-radius: 10px;
-    padding: 20px 40px;
+    padding: 20px 30px;
 }
 
 /* Hébergements cartes */
@@ -275,7 +271,7 @@ a {
     border-radius: 20px;
     background-color: white;
     box-shadow: 1px 1px 4px grey;
-    font-size: small;
+    font-size: .7rem;
     margin-bottom: 30px;
     width: 30%;
 }
@@ -290,11 +286,11 @@ a {
 }
 
 #hebergementsCards h3 {
-    padding-left: 15px;
+    padding: 0 15px;
 }
 
 .hebergementsCardsDescription {
-    padding: 3px 0 10px 15px;
+    padding: 3px 15px 10px 15px;
 }
 
 .hebergementsCardsDescription p {
@@ -310,15 +306,15 @@ a {
 #populaires {
     background-color: #F2F2F2;
     margin-left: 15px;
-    width: 33%;
+    width: 33.33%;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px 27px;
 }
 
 #populaires h2 {
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px 20px 15px;
+    padding: 15px 0 20px 0;
 }
 
 /* Populaires cartes */
@@ -328,7 +324,6 @@ a {
     flex-flow: column wrap;
     justify-content: space-between;
     flex: 0 0 100%;
-    padding: 0 10px;
 }
 
 #populairesCards h3{
@@ -343,7 +338,7 @@ a {
     /* flex: 0 0 100%; */
     box-shadow: 1px 1px 4px grey;
     margin-bottom: 20px;
-    font-size: small;
+    font-size: .7rem;
     padding: 5px;
     height: 150px;
 }
